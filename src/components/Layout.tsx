@@ -1,7 +1,6 @@
 
 import { useRouter } from 'next/router';
 import { ReactNode, useState } from 'react';
-import styles from '../styles/';
 
 interface LinkProps {
   href: string;
@@ -35,9 +34,7 @@ interface LayoutProps {
 }
 
 const Layout = ({ children }: LayoutProps) => {
-  function toggleMenu(event: MouseEvent<HTMLDivElement, MouseEvent>): void {
-    throw new Error('Function not implemented.');
-  }
+
 
   return (
     <div>
@@ -54,26 +51,9 @@ const Layout = ({ children }: LayoutProps) => {
           </ul>
         </nav>
 
-        <nav className='navbarMobile'>
+
    
-      <div className={open() ? `${styles.menu} ${styles.show}` : styles.menu}>
-      <ul>
-            <li>
-              <Link href="/HomePage">Home</Link>
-            </li>
-            <li>
-              <Link href="/AddContactPage">Add Contact</Link>
-            </li>
-            
-          </ul>
-        
-      </div>
-      <div className={styles.hamburger} onClick={toggleMenu}>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-        <div className={styles.line}></div>
-      </div>
-    </nav>
+   
 
 
       </header>
