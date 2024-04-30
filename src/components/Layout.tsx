@@ -1,6 +1,7 @@
 
 import { useRouter } from 'next/router';
 import { ReactNode, useState } from 'react';
+import styles from '../styles/';
 
 interface LinkProps {
   href: string;
@@ -55,9 +56,8 @@ const Layout = ({ children }: LayoutProps) => {
 
         <nav className='navbarMobile'>
    
-      <div >
-        <ul>
-        
+      <div className={open() ? `${styles.menu} ${styles.show}` : styles.menu}>
+      <ul>
             <li>
               <Link href="/HomePage">Home</Link>
             </li>
@@ -68,10 +68,10 @@ const Layout = ({ children }: LayoutProps) => {
           </ul>
         
       </div>
-      <div className='hamburger' onClick={toggleMenu}>
-        <div className='line'></div>
-        <div className='line'></div>
-        <div className='line'></div>
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
+        <div className={styles.line}></div>
       </div>
     </nav>
 

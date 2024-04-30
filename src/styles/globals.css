@@ -258,20 +258,18 @@ a {
   margin: 5px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
  
-  .hamburger {
-    display: flex;
-  }
-  .navbar {
-    display: none;
+ 
+  .navbarMobile {
+    display: block;
   }
 
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
  
-  .navbarMobile {
+  .navbar{
     display: none;
   }
 }
