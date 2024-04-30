@@ -1,0 +1,258 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+/* Form Styles */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Button Styles */
+button {
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-top: 20px;
+  border: 2px black dotted;
+
+  width: 80%;
+  height: 80vh;
+}
+.pacman {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 80px;
+
+}
+.pacman > div {
+  background-color: #ff0;
+  height: 90%;
+  width: 90%;
+  margin-right: auto; 
+
+
+}
+.pacman-top {
+  top: 0;
+  border-radius: 600px 600px 0 0;
+}
+
+.pacman-bottom {
+  bottom: 0;
+  border-radius: 0 0 600px 600px;animation: spinBottom .5s infinite linear;
+}
+
+  
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@keyframes spinBottom {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+}
+
+
+  
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@keyframes spinTop {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  nav  {
+  width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
+
+.button {
+  width: 100px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.button-text {
+  font-size: 16px;
+  font-weight: bold;
+}
